@@ -4,7 +4,7 @@
 
 ## Description
 
-For this project I created a simple and easy to use weather tracking website that takes inputs of the cities names and pulls up a five day forcast of the city that was searched
+For this project I created a simple and easy to use weather tracking website that takes inputs of the cities names and pulls up a five day forcast of the city that was searched.
 
 ## Table of Contents
 
