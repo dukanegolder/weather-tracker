@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Weather Tracker</h1>
+    </header>
+
+    <main>
+
+        <section id="sidebar">
+            
+            <form>
+                <label for="location-name">Location Search:</label> <br><br>
+                <input type="text" id="location-name" placeholder="City Name (i.e London)" name="search">
+                <button id="submit-btn" type="submit" class="fa fa-search"></button>
+            </form>
+
+            <div id="previous-search-container">
+                <ul id="previous-searches"></ul>
+            </div>
+
+        </section>
+        
+        <section id="forecast-container">
+
+            <section id="current-day-forecast-section"></section>
+
+            <section id="forecast-title"></section>
+
+            <section id="five-day-forecast"></section>
+
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

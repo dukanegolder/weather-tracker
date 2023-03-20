@@ -1,0 +1,157 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --grad: linear-gradient(to right, rgb(6, 11, 71), rgb(39, 39, 223));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-image: var(--grad);
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#sidebar li {
+    background-image: var(--grad);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: none;
+    cursor: pointer;
+    border: solid white 3px;
+}
+
+#sidebar li:hover {
+    border: 3px solid gold;
+}
+
+#sidebar button {
+    height: 37px;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(90, 90, 90);
+    border: solid rgb(90, 90, 90) 1px;
+    color: white;
+}
+
+#sidebar input {
+    padding: 10px;
+    border: solid black 1px;
+    width: 400px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-day-forecast {
+    background-color: rgb(185, 185, 187);
+    border-radius: 10px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 40px;
+    width: 1000px;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#current-day-forecast p {
+    padding: 8px;
+}
+
+#current-day-forecast h3 {
+    padding: 0px;
+    padding-left: 10px;
+}
+
+#forecast-container img {
+    height: 40px;
+    width: 40px;
+}
+
+#forecast-title h3 {
+    padding-left: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#forecast-header {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+#five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    background-color: rgb(185, 185, 187);
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.forecast-card p {
+    padding: 5px;
+}
+
+@media screen and (max-width: 1537px) {
+    #sidebar input {
+        width: 300px;
+    }
+}
+ 
+@media screen and (max-width: 1337px) {
+    #sidebar input {
+        width: 200px;
+    }
+}
